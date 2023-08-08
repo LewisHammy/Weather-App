@@ -18,10 +18,12 @@ async function checkWeather(city){
 
 userSearchBtn.addEventListener("click", ()=>{
     checkWeather(userSearch.value);
+    getWeather(userSearch.value)
 })
 
 function getWeather() {
-    var city = document.getElementById("cityInput").value;
+    // var city = document.getElementById("cityInput").value;
+    var city = userSearch.value;
     var apiKey = "543002caf9995f9afabb7a2283601613"; 
     var apiUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=" + apiKey;
 

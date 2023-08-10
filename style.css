@@ -130,17 +130,3 @@ body {
  .week-report{
     display: none;
 }  
-
-/* emoji spin animation! */
-@keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  .emoji {
-    animation: spin 2s linear infinite;
-  }
